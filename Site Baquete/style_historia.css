@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    background: #000000;
+}
+.navbar{
+    background:#161616;
+    height: 80px;
+    width: 100%;
+    border-bottom: 2px solid #FDB927;
+    font-size: 20px;
+    font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+}
+.container{
+    background:#161616;
+    height: 80px;
+    width: 90%;
+    margin: auto;
+}
+.container img{
+    height: 73%;
+    float: left;
+    padding-top: 12px;
+}
+.container h1{
+    color: #FDB927;
+    margin: none;
+    float: left;
+    margin: 15px 0px 0px 10px;
+    font-size: 40px;
+}
+.ul_menu{
+    float: left;
+    list-style: none;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.ul_menu li{
+    float: left;
+    margin: 6px;
+    color: #FDB927;
+    margin-right: 20px;
+    transition: 0.2s;
+}
+.ul_menu li:hover{
+    transition: 0.1s;
+    border-bottom: #552583 2px solid;
+    /* color: #552583; */
+}
+.ul_login{
+    float: right;
+    list-style: none;
+    margin-top: 25px;
+}
+.ul_login li{
+    float: left;
+    margin: 6px;
+    color: #FDB927;
+}
+.campeao{
+    background-image: url(./imagens/campeao.webp);
+    height: 700px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+
+
+.container2{
+    width: 90%;
+    margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white ;
+    font-size: 18px;
+    padding-top: 90px;
+}
+.texto_esquerda{
+    float: left;
+    width: 580px;
+}
+.texto_esquerda p {
+    text-align: justify;
+}
+.texto_esquerda span {
+    font-size: 31px;
+    float: left;
+    color: #5e5b5b;
+}
+
+.texto_direita {
+    float: right;
+    width: 47%;
+}
+.texto_direita img {
+    margin-top: 41px;
+    wid
+}
