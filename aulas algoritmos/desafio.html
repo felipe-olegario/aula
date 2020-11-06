@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" placeholder="valor do carro" id="carro">
+    <input type="number" placeholder="quantidade parcelas" id="parcelas">
+    <button onclick="financiar()">financiar</button>
+    <div id="resultado"></div>
+</body>
+</html>
+<script>
+    function financiar() {
+        var valor_carro = carro.value;
+        var qtd_parcelas = parcelas.value;
+        var valor_parcela = valor_carro / qtd_parcelas;
+        resultado.innerHTML='';
+
+        if (carro == '' || valor_carro < 1000) {
+            alert('Valor total inválido');
+        } else if (qtd_parcelas < 6) {
+            alert('Parcelas inválidas') 
+        } else {
+            for (var parcela=1; parcela <= qtd_parcelas; parcela++) {
+            resultado.innerHTML += `Parcela ${parcela}: R$ ${valor_parcela.toFixed(2)} <br>`
+            valor_parcela *= 1.015;
+            }  
+        }
+    }
+</script>

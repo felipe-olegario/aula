@@ -6,7 +6,7 @@ body{
     background:#161616;
     height: 80px;
     width: 100%;
-    border-bottom: 2px solid #FDB927;
+    border-bottom: 2px solid #552583;
     font-size: 20px;
     font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     position: absolute;
@@ -38,13 +38,13 @@ body{
 .ul_menu li{
     float: left;
     margin: 6px;
-    color: #FDB927;
+    color: #ffffff;
     margin-right: 20px;
     transition: 0.2s;
 }
 .ul_menu li:hover{
     transition: 0.1s;
-    border-bottom: #552583 2px solid;
+    border-bottom: #FDB927 2px solid;
     /* color: #552583; */
 }
 .ul_login{
@@ -55,7 +55,7 @@ body{
 .ul_login li{
     float: left;
     margin: 6px;
-    color: #FDB927;
+    color: #ffffff;
 }
 .campeao{
     background-image: url(./imagens/campeao.webp);
@@ -65,33 +65,70 @@ body{
     background-repeat: no-repeat;   
 }
 
+/* END NAVBAR */
 
 .container2{
     width: 90%;
     margin: auto;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white ;
-    font-size: 18px;
+    font-size: 20px;
     padding-top: 90px;
 }
 .texto_esquerda{
     float: left;
-    width: 580px;
+    width: 47%;
 }
 .texto_esquerda p {
     text-align: justify;
 }
-.texto_esquerda span {
+.container2 span {
     font-size: 31px;
-    float: left;
-    color: #5e5b5b;
+    color: #FDB927;
 }
 
 .texto_direita {
     float: right;
     width: 47%;
+    text-align: justify;
 }
 .texto_direita img {
-    margin-top: 41px;
-    wid
+    margin-top: 30px;
+    width: 100%;
+}
+
+/* END MAIN */
+
+
+.rodape{
+    height: 140px;
+    width: 100%;
+    background: black;
+    overflow: auto;
+    border-top: #552583 2px solid;
+}
+.container4{
+    height: 100px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: black;
+}
+.valores{
+    width: 450px;
+    text-align: justify;
+    margin: 0;
+    color: white;
+    padding-top: 10px;
+}
+.redes{
+    text-align: right;
+    margin-top: -44px;
+}
+.redes img {
+    height: 40px;
+}
+.rodape p {
+    color: white    ;
 }

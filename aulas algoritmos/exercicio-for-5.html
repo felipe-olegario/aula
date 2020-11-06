@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" placeholder="numero tabuada" id="tabuada">
+    <button onclick="mutiplicar()">ver tabuada</button>
+    <div id="resultado"></div>
+</body>
+</html>
+<script>
+    function mutiplicar() {
+        var tabua = (tabuada.value);
+        resultado.innerHTML=''
+
+        for (var conta = 0;conta<11; conta++) {
+            resultado.innerHTML += `${conta} * ${tabua} = ${conta * tabua} <br>`;
+        }
+    }
+</script>
