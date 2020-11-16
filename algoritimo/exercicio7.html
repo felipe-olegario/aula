@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    Quantos escudos deseja: <input type="text" id="in_qtd_escudos">
+    <br><br>
+    quantos escudos por linha? <input type="text" id="in_escudos_linha">
+    <br><br>
+    <select id="lista" style="background: rgb(196, 190, 190); text-decoration: none;">
+        <option value="0">--Tamanho da imagem --</option>
+        <option value="50">Pequeno</option>
+        <option value="100">Medio</option>
+        <option value="200">Grande</option>
+    </select>
+    <br><br>
+    URL da imagem: <input type="text" id="in_imagem">
+    <br><br>
+    <button onclick="ver_escudos()">mostrar escudo</button>
+    <div id="div_escudos"></div>
+</body>
+</html>
+<script>
+    function ver_escudos() {
+        var qtd_escudos = Number(in_qtd_escudos.value);
+        var tamanho_escudos =lista.value;
+        var qtd_escudo_linha = Number(in_escudos_linha.value);
+        var url_imagem = in_imagem.value;
+        div_escudos.innerHTML='';
+
+        for (var contador = 0; contador < qtd_escudos; contador++) {
+            div_escudos.innerHTML += `<img width = "${tamanho_escudos}" src="${url_imagem}">`
+          
+            var quebra_linha = (contador + 1) % qtd_escudo_linha == 0;
+            if (quebra_linha) {
+                div_escudos.innerHTML += '<br>'
+            }
+        }
+    }
+</script>
