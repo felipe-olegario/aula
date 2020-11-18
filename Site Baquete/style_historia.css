@@ -4,21 +4,22 @@ body{
 }
 .navbar{
     background:#161616;
-    height: 80px;
+    height: 20%;
     width: 100%;
     border-bottom: 2px solid #552583;
     font-size: 20px;
-    font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    position: absolute;
+    font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;    
 }
 .container{
     background:#161616;
-    height: 80px;
+    height: 20%;
     width: 90%;
     margin: auto;
+    display: flex;
+    justify-content: center;
 }
 .container img{
-    height: 73%;
+    height: 60px;
     float: left;
     padding-top: 12px;
 }
@@ -47,6 +48,10 @@ body{
     border-bottom: #FDB927 2px solid;
     /* color: #552583; */
 }
+.container a {
+    text-decoration: none;
+    color: #ffffff;
+}
 .ul_login{
     float: right;
     list-style: none;
@@ -73,7 +78,8 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white ;
     font-size: 20px;
-    padding-top: 90px;
+    display: flex;
+    justify-content: space-between;
 }
 .texto_esquerda{
     float: left;
@@ -85,6 +91,7 @@ body{
 .container2 span {
     font-size: 31px;
     color: #FDB927;
+    font-weight: 900;
 }
 
 .texto_direita {
@@ -94,26 +101,32 @@ body{
 }
 .texto_direita img {
     margin-top: 30px;
-    width: 100%;
+    width: 50%;
+    float: left;
 }
 
 /* END MAIN */
 
 
 .rodape{
-    height: 140px;
+    height: 50%;
     width: 100%;
-    background: black;
+    background: #161616;
     overflow: auto;
     border-top: #552583 2px solid;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .container4{
-    height: 100px;
+    height: 50%;
     width: 90%;
     margin: auto;
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background: black;
+    background: #161616;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
 }
 .valores{
     width: 450px;
@@ -124,7 +137,7 @@ body{
 }
 .redes{
     text-align: right;
-    margin-top: -44px;
+    margin-top: 50px;
 }
 .redes img {
     height: 40px;

@@ -15,10 +15,10 @@
                 <img src="https://logodownload.org/wp-content/uploads/2019/06/los-angeles-lakers-logo.png" class="logo">
                 <h1>Lakers Brasil</h1>
                 <ul class="ul_menu">
-                    <li>PÁGINA INICIAL</li>
-                    <li>HISTÓRIA</li>
-                    <li>WALLPAPPERS</li>
-                    <li>HIGHLIGHTS</li>
+                    <li><a href="./home.html">PÁGINA INICIAL</a></li>
+                    <li><a href="./historia.html">HISTÓRIA</a></li>
+                    <li style="border-bottom: #FDB927 2px solid;">WALLPAPPERS</li>
+                    <li><a href="./highlights.html">HIGHLIGHTS</a></li>
                 </ul>
                 <ul class="ul_login">
                     <li>LOGIN</li>
@@ -28,12 +28,87 @@
         </div>
     </header>
 
+    <!-- END NAVBAR -->
+
     <main>
         <div class="container2">
-            <h1>WALLPAPERS</h1>
+            <br>
+            <span>WALLPAPERS</span>
+            <div class="wallpapers">
+                <img src="https://www.nba.com/lakers/sites/lakers/files/1920_lal_mktg_championwallpapers_rondo.jpg">
+                
+                <img src="https://www.nba.com/lakers/sites/lakers/files/1920_lal_mktg_championwallpapers_ad.jpg">
+
+                <img src="https://www.nba.com/lakers/sites/lakers/files/1920_lal_mktg_championwallpapers_bron_2.jpg">
+
+                <img src="https://www.nba.com/lakers/sites/lakers/files/1920_lal_mktg_championwallpapers_bronad.jpg">
+
+                <img src="https://www.nba.com/lakers/sites/lakers/files/1920_lal_mktg_championwallpapers_team.jpg">
+
+                <img src="https://www.nba.com/lakers/sites/lakers/files/1920_lal_mktg_wallpapers_champs_v2_jd.jpg">
+
+                <img src="https://www.nba.com/lakers/sites/lakers/files/1920_lal_mktg_wallpapers_champs_v1_jd.jpg">
+
+                <img src="https://www.nba.com/lakers/sites/lakers/files/1920_lal_mktg_ww110619_v1_jd.jpg">
+
+                <img src="https://www.nba.com/lakers/sites/lakers/files/1920_lal_mktg_wallpapers_mediaday_v1.jpg">
+
+                <img src="https://www.nba.com/lakers/sites/lakers/files/1920_lal_mktg_ww_100919_02_al.jpg">
+
+                <img src="https://www.nba.com/lakers/sites/lakers/files/1920_lal_mktg_ww_100919_03_em.jpg">
+
+                <img src="https://www.nba.com/lakers/sites/lakers/files/1920_lal_mktg_wallpapers_mediaday_v3.jpg">
+
+                <!-- <img src="https://www.nba.com/lakers/sites/lakers/files/1920_lal_mktg_wallpapers_mediaday_v4.jpg"> -->
+            </div>
+
+            <button onclick="carregar()" id="botao">CARREGAR IMAGENS</button>
             
+            <div id="wallpapers2">
+                <img src="https://www.nba.com/lakers/sites/lakers/files/1920_lal_mktg_wallpapers_bron_v1.jpg">
+
+                <img src="https://www.nba.com/lakers/sites/lakers/files/1920_lal_mktg_ww092519_03_al.jpg">
+
+                <img src="https://www.nba.com/lakers/sites/lakers/files/1920_lal_mktg_ww082819_01_al.jpg">
+
+                <img src="https://www.nba.com/lakers/sites/lakers/files/1920_lal_mktg_ww090419_01_al.jpg">
+
+                <img src="https://www.nba.com/lakers/sites/lakers/files/d1kq91fuwae9q0q.jpg">
+
+                <img src="https://www.nba.com/lakers/sites/lakers/files/1920_lal_mktg_ww082419_05_jd.jpg">
+
+                <img src="https://www.nba.com/lakers/sites/lakers/files/1920_lal_mktg_ww082419_08_al.jpg">
+
+                <img src="https://www.nba.com/lakers/sites/lakers/files/1920_lal_mktg_ww081419_04-2_jd.jpg">
+            </div>
         </div>
     </main>
+
+    <!-- END MAIN -->
+<br>
+    <footer>
+        <div class="rodape">
+            <div class="container4">
+                <p class="valores">O site tem como objetivo divugar a prática do basquete e inspirar jovens a práticar este esporte maravilhoso.
+                    O basquete me ensinou a superar obstáculos, trabalhar em 
+                    equipe, nunca desistir durante a adversidade, confiança,
+                    superação, liderança, determinação, foco. </p>
+                    <div class="redes">
+                        <img src="./imagens/instagram.png">
+                        <img src="./imagens/TWITTER_icon-icons.com_65536.png">
+                        <img src="./imagens/gmail.png">
+                        <img src="./imagens/facebook.png">
+                    </div>
+            </div>
+            <p style="color: #505050 ;">Copyright © 2020 Developed by Felipe Olegario in colaboration Badtec</p>
+        </div>
+    </footer>
     
 </body>
 </html>
+<script>
+    function carregar() {
+        wallpapers2.style.display = 'flex';
+        botao.style.display = 'none';
+    }
+</script>

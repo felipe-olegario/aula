@@ -5,16 +5,19 @@ body{
 }
 .navbar{
     background:#161616;
-    height: 80px;
+    height: 20%;
+    max-height: 20%;
     width: 100%;
     border-bottom: 2px solid #552583;
     font-size: 20px;
 }
 .container{
     background:#161616;
-    height: 80px;
+    height: 20%;
     width: 90%;
     margin: auto;
+    display: flex;
+    justify-content: center;
 }
 .container img{
     height: 60px;
@@ -44,7 +47,6 @@ body{
 .ul_menu li:hover{
     transition: 0.1s;
     border-bottom: #FDB927 2px solid;
-    /* color: #552583; */
 }
 .ul_login{
     float: right;
@@ -56,15 +58,96 @@ body{
     margin: 6px;
     color: #ffffff;
 }
+.ul_menu a {
+    text-decoration: none;
+    color: #ffffff;
+}
 
 
 /* END NAVBAR */
+
 .container2{
     width: 90%;
     margin: auto;
-    /* text-align: center; */
     font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    /* padding-top: 20px; */
 }
-.container2 h1 {
+.container2 span {
     color: white;
+    font-size: 50px;
+    border-bottom: #FDB927 2px solid;
+    width: 40%;
+    margin: auto;
+}
+.wallpapers {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.wallpapers img {
+    max-width: 23%;   
+    margin-top: 30px;
+}
+.container2 button {
+    width: 200px;
+    height: 50px;
+    color: #FDB927;
+    background: #552583;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 50px;
+    font-size: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#wallpapers2 {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: none;
+}
+#wallpapers2 img {
+    width: 23%;   
+    margin-top: 30px;
+}
+
+/* END MAIN */
+
+.rodape{
+    height: 50%;
+    width: 100%;
+    background:  #161616;
+    overflow: auto;
+    border-top: #552583 2px solid;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+.container4{
+    height: 50%;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background:  #161616;
+    display: flex;
+    justify-content: space-between;
+}
+.valores{
+    width: 450px;
+    text-align: justify;
+    margin: 0;
+    color: white;
+    padding-top: 10px;
+}
+.redes{
+    text-align: right;
+    margin-top: 50px;
+    width: 25%;
+}
+.redes img {
+    height: 40px;
+}
+.rodape p {
+    color: white    ;
 }
