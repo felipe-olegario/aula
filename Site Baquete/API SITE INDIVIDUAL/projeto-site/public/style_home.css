@@ -1,0 +1,195 @@
+body{
+    margin: 0;
+    font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: black;
+}
+.navbar{
+    background: transparent;
+    height: 20%;
+    width: 100%;
+    /* border-bottom: 2px solid #552583; */
+    font-size: 20px;
+}
+.container{
+    background:transparent;
+    height: 20%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.container img{
+    height: 60px;
+    float: left;
+    padding-top: 12px;
+}
+.container h1{
+    color: #FDB927;
+    margin: none;
+    float: left;
+    margin: 15px 0px 0px 10px;
+    font-size: 40px;
+}
+.ul_menu{
+    float: left;
+    list-style: none;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.ul_menu li{
+    float: left;
+    margin: 6px;
+    color: #ffffff;
+    margin-right: 20px;
+    transition: 0.2s;
+}
+.ul_menu li:hover{
+    transition: 0.1s;
+    border-bottom: #FDB927 2px solid;
+    /* color: #552583; */
+}
+.ul_menu a {
+    color: white;
+    text-decoration: none;
+}
+.ul_login{
+    float: right;
+    list-style: none;
+    margin-top: 25px;
+}
+.ul_login li{
+    float: left;
+    margin: 6px;
+    color: #ffffff;
+}
+
+/* END NAVBAR */
+
+.campeao{
+    background-image: url(./imagens/campeao.webp);
+    height: 700px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+
+
+.trofeis{
+    width: 100%;
+    height: 250px;
+    border-bottom: #FDB927 2px solid;
+    border-top: #FDB927 2px solid;
+    text-align: center;
+}
+.trofeis h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    margin: 0;
+    border-bottom: #552583 2px solid;
+    width: 50%;
+    margin: auto;
+    font-size: 50px;
+    font-weight: lighter;
+}
+.container2{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container2 div {
+    float: left;
+    text-align: center;
+}
+
+.container2 div img{
+    height: 91px;
+}
+.container2 span{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+/* END TROFEIS */
+
+.elenco{
+    width: 90%;
+    height: 900px;
+    background-color: black;
+    margin: auto;
+    text-align: center;
+    overflow: auto;
+}
+.elenco h1 {
+    color: white;
+    font-size: 50px;
+    border-bottom: #552583 2px solid;
+    width: 30%;
+    margin: auto;
+    /* font-weight: lighter; */
+}
+.container3{
+    margin: auto;
+    /* height: 100%; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container3 img{
+    height: 200px;
+    margin-top: 20px;
+}
+.container3 span {
+    color: #ffffff;
+    font-size: 25px;
+    border-bottom: #552583 2px solid;
+}
+.container3 div{
+    float: left;
+    text-align: center;
+}
+
+/* END MAIN */
+
+.rodape{
+    height: 50%;
+    width: 100%;
+    background: #161616;
+    border-top: #FDB927 2px solid;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+.container4{
+    height: 50%;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #161616;
+    display: flex;
+    justify-content: space-between;
+}
+.valores{
+    width: 450px;
+    text-align: justify;
+    margin: 0;
+    color: white;
+    padding-top: 10px;
+}
+.redes{
+    text-align: right;
+    margin-top: 50px;
+}
+.redes img {
+    height: 40px;
+}
+.rodape p {
+    color: white;
+    margin: 0;
+}
+
+ 

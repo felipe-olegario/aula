@@ -1,0 +1,166 @@
+body{
+    margin: 0;
+    font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: #000000;
+}
+.navbar{
+    background:#161616;
+    height: 20%;
+    max-height: 20%;
+    width: 100%;
+    border-bottom: 2px solid #552583;
+    font-size: 20px;
+}
+.container{
+    background:#161616;
+    height: 20%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.container img{
+    height: 60px;
+    float: left;
+    padding-top: 12px;
+}
+.container h1{
+    color: #FDB927;
+    margin: none;
+    float: left;
+    margin: 15px 0px 0px 10px;
+    font-size: 40px;
+}
+.ul_menu{
+    float: left;
+    list-style: none;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.ul_menu li{
+    float: left;
+    margin: 6px;
+    color: #ffffff;
+    margin-right: 20px;
+}
+.ul_menu li:hover{
+    border-bottom: #FDB927 2px solid;
+}
+.ul_login{
+    float: right;
+    list-style: none;
+    margin-top: 25px;
+}
+.ul_login li{
+    float: left;
+    margin: 6px;
+    color: #ffffff;
+}
+.ul_menu a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+/* END NAVBAR */
+
+.div_background {
+    height: 600px;
+    width: 100%;
+    background-image: url(./imagens/areia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container2 {
+    /* width: 90%;
+    margin: auto; */
+}
+.div_esquerda {
+    width: 60%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    float: left;
+}
+.div_esquerda h1 {
+    padding-top: 170px;
+    margin: 0%;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-left: 9%;
+}
+.div_direita {
+    background: rgba(0, 0, 0, 0.548);
+    height: 600px;
+    width: 40%;
+    float: left;
+}
+.div_direita ul {
+    float: right;
+    list-style: none;
+    margin-top: 25px;
+    color: white;
+    margin-right: 53%;
+}
+.div_direita li {
+    float: left;
+    margin: 10px;
+    font-size: 22px;
+}
+
+.div_direita input {
+    margin-left: 11%;
+    margin-top: 50px;
+    border: none;
+    font-size: 20px;
+    border-bottom: #FDB927 2px solid;
+    background: transparent;
+    width: 60%;
+    outline: none;
+    color: gray;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#senha {
+    margin-left: 11%;
+    margin-top: 30px;
+    border: none;
+    font-size: 20px;
+    border-bottom: #FDB927 2px solid;
+    background: transparent;
+    width: 60%;
+    outline: none;
+    color: gray;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.div_direita button {
+    margin-left: 11%;
+    margin-top: 30px;
+    width: 100px;
+    height: 30px;
+    background: #552583;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    /* border: 1px #FDB927 solid; */
+    border-radius: 50px;
+    font-weight: 400;
+    font-size: 15px;
+}
+.div_direita span {
+    color: white;
+    font-size: 22px;
+    margin-left: 11%;
+    margin-top: 30px;
+}
+#span_login {
+    margin-left: 11%;
+    width: 70%;
+    color: white;
+    font-size: 22px;
+    font-weight: 100;
+}
+.div_redes {
+    margin-left: 11%;
+}
+.div_redes img {
+    height: 30px;
+}

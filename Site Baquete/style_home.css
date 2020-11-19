@@ -4,14 +4,14 @@ body{
     background: black;
 }
 .navbar{
-    background:#161616;
+    background: transparent;
     height: 20%;
     width: 100%;
-    border-bottom: 2px solid #552583;
+    /* border-bottom: 2px solid #552583; */
     font-size: 20px;
 }
 .container{
-    background:#161616;
+    background:transparent;
     height: 20%;
     width: 90%;
     margin: auto;
