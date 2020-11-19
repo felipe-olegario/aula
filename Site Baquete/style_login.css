@@ -17,7 +17,7 @@ body{
     width: 90%;
     margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 .container img{
     height: 60px;
@@ -42,10 +42,8 @@ body{
     margin: 6px;
     color: #ffffff;
     margin-right: 20px;
-    transition: 0.2s;
 }
 .ul_menu li:hover{
-    transition: 0.1s;
     border-bottom: #FDB927 2px solid;
 }
 .ul_login{
@@ -69,8 +67,100 @@ body{
 .div_background {
     height: 600px;
     width: 100%;
-    background-image: url(https://images.pexels.com/photos/154246/pexels-photo-154246.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-
+    background-image: url(./imagens/areia.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+.container2 {
+    /* width: 90%;
+    margin: auto; */
+}
+.div_esquerda {
+    width: 60%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    float: left;
+}
+.div_esquerda h1 {
+    padding-top: 170px;
+    margin: 0%;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-left: 9%;
+}
+.div_direita {
+    background: rgba(0, 0, 0, 0.548);
+    height: 600px;
+    width: 40%;
+    float: left;
+}
+.div_direita ul {
+    float: right;
+    list-style: none;
+    margin-top: 25px;
+    color: white;
+    margin-right: 53%;
+}
+.div_direita li {
+    float: left;
+    margin: 10px;
+    font-size: 22px;
+}
+
+.div_direita input {
+    margin-left: 11%;
+    margin-top: 50px;
+    border: none;
+    font-size: 20px;
+    border-bottom: #FDB927 2px solid;
+    background: transparent;
+    width: 60%;
+    outline: none;
+    color: gray;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#senha {
+    margin-left: 11%;
+    margin-top: 30px;
+    border: none;
+    font-size: 20px;
+    border-bottom: #FDB927 2px solid;
+    background: transparent;
+    width: 60%;
+    outline: none;
+    color: gray;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.div_direita button {
+    margin-left: 11%;
+    margin-top: 30px;
+    width: 100px;
+    height: 30px;
+    background: #552583;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    /* border: 1px #FDB927 solid; */
+    border-radius: 50px;
+    font-weight: 400;
+    font-size: 15px;
+}
+.div_direita span {
+    color: white;
+    font-size: 22px;
+    margin-left: 11%;
+    margin-top: 30px;
+}
+#span_login {
+    margin-left: 11%;
+    width: 70%;
+    color: white;
+    font-size: 22px;
+    font-weight: 100;
+}
+.div_redes {
+    margin-left: 11%;
+}
+.div_redes img {
+    height: 30px;
 }
