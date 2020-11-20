@@ -32,28 +32,59 @@
             <div class="container2">
                 
                 <div class="div_esquerda">
-                    <h1>Crie uma conta para receber notícias e notificações do seu time do coração</h1>
+                    <h1>Crie uma conta para receber notícias e notificações do seu time do coração!</h1>
                 </div>
 
                 <div class="div_direita">
 
-                    <div class="div_login">
-                        
+                    <div id="div_login">
+                        <ul>
+                            <li style="border-bottom: #FDB927 solid 2px;">LOGIN</li>
+                            <li onclick="cadastro()">CADASTRE-SE</li>
+                        </ul>
+    
+                        <form id="form_login" method="post" onsubmit="return entrar()">
+                            <input type="text" class="usuario" name="login" placeholder="Usuario">
+                            <br>
+                            <input type="password" class="senha" name="senha" placeholder="Senha">
+                            <br>
+                            <button id="btn_entrar" class="btn">Entrar</button>
+                        </form>
+                        <div class="extra">
+                            <div id="div_erro" class="msg_erro">
+                            </div>
+        
+                            <img src="./carregando.gif" id="img_aguarde" style="width: 100px;">
+                            
+                        </div>
+                        <br><br>
+                        <span>Esqueceu a senha?</span>
+                        <br><br>
+                        <h1 id="span_login">Acesse sua conta e compartilhe videos,  imagens, notícias, curiosidade do lakers e do seu atleta favorito</h1>
                     </div>
-                    <ul>
-                        <li style="border-bottom: #FDB927 solid 2px;">LOGIN</li>
-                        <li>CADASTRE-SE</li>
-                    </ul>
 
-                    <input type="email" id="usuario" placeholder="Email ou Usuario">
+                    <!-- END DIV_LOGIN -->
 
-                    <input type="password" id="senha" placeholder="Senha">
-<br>
-                    <button onclick="entrar()">ENTRAR</button>
-<br><br>
-                    <span>Esqueceu a senha?</span>
-                    <br><br>
-                    <h1 id="span_login">Acesse sua conta e compartilhe videos,  imagens, notícias e curiosidade do lakers, um dos maiores campeões da história da NBA</h1>
+                    <div id="div_cadastro">
+                        <ul>
+                            <li onclick="login()">LOGIN</li>
+                            <li style="border-bottom: #FDB927 solid 2px;">CADASTRE-SE</li>
+                        </ul>
+    
+                    <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
+                                <input type="text" name="nome" class="senha" autofocus="autofocus" placeholder="Nome completo"  required minlength="4">
+                                <input type="text" name="login" class="senha" placeholder="Usuário para login"  required minlength="4">
+                                <input type="password" name="senha" class="senha" placeholder="**********"  required minlength="4">
+                            
+                            <input type="submit" id="btn_carrega" value="Cadastrar">
+                    </form>
+                    <img src="./aguarde-orange2.gif" id="img_aguarde" style="display: none;" width="80px">
+                        <br>
+                        <h1 id="span_login">Acesse sua conta e compartilhe videos,  imagens, notícias, curiosidade do lakers e do seu atleta favorito</h1>
+                    </div>
+
+                    <img src="./aguarde-orange2.gif" id="img_aguarde" style="display: none;" width="100px">
+        
 
                     <div class="div_redes">
                         <img src="./imagens/facebook.png">
@@ -70,3 +101,98 @@
 
 </body>
 </html>
+<script>
+    function cadastro() {
+        div_login.style.display = 'none';
+        div_cadastro.style.display = 'block';
+    }
+
+    function login() {
+        div_cadastro.style.display = 'none';
+        div_login.style.display = 'block';
+    }
+
+    function entrar() {
+        aguardar();
+        var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    sessionStorage.login_usuario_meuapp = json.login;
+                    sessionStorage.nome_usuario_meuapp = json.nome;
+
+                    window.location.href = 'home.html';
+                });
+
+            } else {
+
+                console.log('Erro de login!');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    finalizar_aguardar(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+
+    function aguardar() {
+        btn_entrar.disabled = true;
+        img_aguarde.style.visibility = 'visible';
+        div_erro.style.visibility = 'hidden';
+    }
+
+    function finalizar_aguardar(resposta) {
+        btn_entrar.disabled = false;
+        img_aguarde.style.visibility = 'hidden';
+        div_erro.style.visibility = 'visible';
+        div_erro.innerHTML = resposta;
+    }
+
+// END ENTRAR
+
+    function cadastrar() {
+        aguardar();
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+            
+            if (response.ok) {
+
+                window.location.href='home.html';
+
+            } else {
+
+                console.log('Erro de cadastro!');
+                response.text().then(function (resposta) {
+                    div_erro.innerHTML = resposta;
+                });
+                finalizar_aguardar();
+            }
+        });
+
+        return false;
+    }
+
+    function aguardar() {
+        btn_carrega.disabled = true;
+        img_aguarde.style.display='block';
+        div_erro.style.display='none';
+    }
+
+    function finalizar_aguardar() {
+        btn_carrega.disabled = false;
+        img_aguarde.style.display='none';
+        div_erro.style.display='block';
+    }
+</script>

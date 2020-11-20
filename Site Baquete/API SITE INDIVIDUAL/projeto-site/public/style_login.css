@@ -100,6 +100,7 @@ body{
     margin-top: 25px;
     color: white;
     margin-right: 53%;
+    cursor: pointer;
 }
 .div_direita li {
     float: left;
@@ -107,7 +108,7 @@ body{
     font-size: 22px;
 }
 
-.div_direita input {
+.usuario {
     margin-left: 11%;
     margin-top: 50px;
     border: none;
@@ -119,7 +120,7 @@ body{
     color: gray;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-#senha {
+.senha {
     margin-left: 11%;
     margin-top: 30px;
     border: none;
@@ -163,4 +164,39 @@ body{
 }
 .div_redes img {
     height: 30px;
+}
+#div_login {
+    display: block;
+}
+#div_cadastro {
+    display: none;
+}
+#btn_entrar {
+    margin-left: 11%;
+    margin-top: 30px;
+    border: none;
+    font-size: 20px;
+    border: #FDB927 2px solid;
+    background: transparent;
+    width: 60%;
+    outline: none;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 15px;
+}
+#btn_carrega {
+    margin-left: 11%;
+    margin-top: 30px;
+    border: none;
+    font-size: 20px;
+    border: #FDB927 2px solid;
+    background: transparent;
+    width: 60%;
+    outline: none;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 15px;
+}
+#img_aguarde {
+    margin-left: 34%;
 }
