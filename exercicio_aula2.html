@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="in_aluno" placeholder="Informe o nome do aluno">
+    <button onclick="cadastrar()">Cadastrar Aluno</button>
+    <br><br>
+    <input type="text" id="in_letra" placeholder="Letra Ininicial" maxlength="1" style="text-transform: uppercase;">
+    <button onclick="verificar()">Verificar Alunos</button>
+</body>
+
+</html>
+<script>
+    var alunos = [];
+    function cadastrar() {
+        alunos.push(in_aluno.value);
+        console.log(alunos);
+    }
+
+    function verificar() {
+        var letraInicial = in_letra.value;
+        var nomes_com_inicial = 0
+        var validacao = false;
+        for (contador = 0; contador < alunos.length; contador++) {
+            if (alunos[contador].toLowerCase().startsWith(letraInicial.toLowerCase())) {
+                nomes_com_inicial++;
+                validacao = true;
+            }
+        }
+        if (validacao == true) {
+            alert(`Quantidade de nomes com a letrar ${letraInicial}: ${nomes_com_inicial}`)
+        } else {
+            alert('Não há nomes com esta inicial')
+        }
+    }
+</script>

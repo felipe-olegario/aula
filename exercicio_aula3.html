@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="in_numeros">
+    <button onclick="cadastrar()">Cadastrar Numero</button>
+    <br><br>
+    <select id="combo">
+        <option value="completo">Busca completa</option>
+        <option value="first">Busca First-Item</option>
+    </select>
+    <button onclick="buscar()">Buscar Numero</button>
+</body>
+
+</html>
+<script>
+    var numeros = [];
+    function cadastrar() {
+        numeros.push(in_numeros.value);
+        console.log(numeros);
+    }
+
+    function buscar() {
+        var validacao;
+        if (combo.value == 'completo') {
+            var vezes = 0;
+            for (contador = 0; contador < numeros.length; contador++) {
+                if (numeros[contador] == in_numeros.value) {
+                    vezes++
+                }
+            }
+            alert(`O número ${in_numeros.value} foi cadastrado ${vezes}`);
+        } else {
+            for (contador = 0; contador < numeros.length; contador++) {
+                if (numeros[contador] == in_numeros.value) {
+                    alert(`A posição do telefone cadastrado é a ${contador + 1}`)
+                    break;
+                }
+            }
+        }
+
+    }
+</script>
